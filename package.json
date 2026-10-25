@@ -1,0 +1,22 @@
+{
+  "name": "q-zero",
+  "version": "1.0.0",
+  "description": "Q-Zero: smart campus printing platform (Express API + web frontend)",
+  "main": "server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js",
+    "test": "node --no-warnings test/e2e.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.0",
+    "nodemailer": "^6.9.16",
+    "zod": "^3.24.0"
+  }
+}
